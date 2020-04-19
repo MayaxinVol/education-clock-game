@@ -1,0 +1,475 @@
+
+/**
+ * Responsive
+ */
+@media screen and (max-width: 992px) {
+    .levelTxt {
+        margin: auto;
+        font-size: 10px !important;
+    }
+
+    .menuTop {
+        min-width: 390px;
+        text-align: justify;
+    }
+
+    .w3-bar-item > a {
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .loading {
+        min-width: 778px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .levelTxt {
+        font-size: 10px !important;
+    }
+
+    .menuTop {
+        min-width: 390px;
+    }
+    .w3-bar-item {
+        text-align: justify;
+    }
+}
+
+/**
+  * First Page
+ */
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    height: 100%;
+    background: #FFF;
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+#canvas {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.loading {
+    margin: auto;
+    padding: 5px;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 20px;
+    border-color: #4b9bff;
+    max-width: 940px;
+    text-align: justify;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    color: #444;
+    background-color: #beeefc;
+    background-repeat: no-repeat;
+}
+
+.hide {
+    display: none;
+}
+
+.hideMain {
+
+}
+
+.mainBackGround, .main2 {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.mainBackGround,
+.levelButton,
+.roundButton,
+.robotGameStart,
+.robotGameMenu,
+.gameStartClock,
+.gameStartTime,
+.trueGameRound,
+.falseGameRound,
+.robotGameRound
+{
+    height: 655px;
+    background-position: center;
+    background-size: cover;
+    color: #FFF;
+}
+
+.mainBackGround {
+    /*width: 100%;*/
+    /*max-width: 900px;*/
+    background-image:
+            url("../image/TV/TV02.png"),
+            url("../image/TV/TV01.png"),
+            url("../image/background/background02.png"),
+            url("../image/background/background01.png");
+}
+
+.levelButton {
+    background-image:
+        url("../image/TV/MenuButtons03.png"),
+        url("../image/TV/MenuButtons02.png"),
+        url("../image/TV/MenuButtons01.png");
+}
+
+.roundButton, .startButton {
+    background-image:
+            url("../image/TV/Buttons05.png"),
+            url("../image/TV/Buttons04.png"),
+            url("../image/TV/Buttons01.png");
+}
+
+.robotGameStart, .robotGameMenu {
+    background-image:
+        url("../image/robot/RobotFirstPose05RightArm02.png"),
+        url("../image/robot/RobotFirstPose03Head.png"),
+        url("../image/robot/RobotFirstPose04LeftArm.png"),
+        url("../image/robot/RobotFirstPose01RightArm01.png"),
+        url("../image/robot/RobotFirstPose02Body.png");
+}
+
+.gameStartClock {
+    background-image:
+            url("../image/TV/Clock01.png");
+}
+
+.gameStartTime {
+    background-image:
+            url("../image/TV/Clock03.png"),
+            url("../image/TV/Clock02.png");
+}
+
+.robotGameRound {
+    background-image:
+            url("../image/robot/RobotSecondPose(CorrectAnswer)05RightArm02.png"),
+            url("../image/robot/RobotSecondPose(CorrectAnswer)04LeftArm.png"),
+            url("../image/robot/RobotSecondPose(CorrectAnswer)01RightArm01.png"),
+            url("../image/robot/RobotSecondPose(CorrectAnswer)03Head.png"),
+            url("../image/robot/RobotSecondPose(CorrectAnswer)02Body.png");
+}
+
+.trueGameRound {
+}
+
+.falseGameRound {
+}
+
+/**
+ * round definition
+ */
+
+.round1 {
+    background-image:
+            url("../image/TV/roundButtonPNG/round-1.png");
+}
+
+.round2 {
+    background-image:
+            url("../image/TV/roundButtonPNG/round-2.png");
+}
+
+.round3 {
+    background-image:
+            url("../image/TV/roundButtonPNG/round-3.png");
+}
+
+.round4 {
+    background-image:
+            url("../image/TV/roundButtonPNG/round-4.png");
+}
+
+.round5 {
+    background-image:
+            url("../image/TV/roundButtonPNG/round-5.png");
+}
+
+.round6 {
+    background-image:
+            url("../image/TV/roundButtonPNG/round-6.png");
+}
+
+.round7 {
+    background-image:
+            url("../image/TV/roundButtonPNG/round-7.png");
+}
+
+.round8 {
+    background-image:
+            url("../image/TV/roundButtonPNG/round-8.png");
+}
+
+.round9 {
+    background-image:
+            url("../image/TV/roundButtonPNG/round-9.png");
+}
+
+.round10 {
+    background-image:
+            url("../image/TV/roundButtonPNG/round-10.png");
+}
+
+.round11 {
+    background-image:
+            url("../image/TV/roundButtonPNG/round-11.png");
+}
+
+.round12 {
+    background-image:
+            url("../image/TV/roundButtonPNG/round-12.png");
+}
+
+.round13 {
+    background-image:
+            url("../image/TV/roundButtonPNG/round-13.png");
+}
+
+.round14 {
+    background-image:
+            url("../image/TV/roundButtonPNG/round-14.png");
+}
+
+.round15 {
+    background-image:
+            url("../image/TV/roundButtonPNG/round-15.png");
+}
+
+.round16 {
+    background-image:
+            url("../image/TV/roundButtonPNG/round-16.png");
+}
+
+.round17 {
+    background-image:
+            url("../image/TV/roundButtonPNG/round-17.png");
+}
+
+.round18 {
+    background-image:
+            url("../image/TV/roundButtonPNG/round-18.png");
+}
+
+.round19 {
+    background-image:
+            url("../image/TV/roundButtonPNG/round-19.png");
+}
+
+.round20 {
+    background-image:
+            url("../image/TV/roundButtonPNG/round-20.png");
+}
+
+.menuTop {
+    padding-top: 240px
+}
+
+.robotRound {
+    margin-top: -514px;
+}
+
+.menuMargin {
+    /*padding-left: 10%;*/
+    /*padding-right: 10%;*/
+}
+
+.btnHeader {
+    padding: 3px 30px 5px 30px;
+    border-radius: 8px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    margin-right: 20px;
+    font-weight: bold;
+    background: #d5eefc;
+}
+
+.btnHeader:hover {
+    color: green !important;
+    border-radius: 10px;
+    border-color: #494949 !important;
+    transition: all 0.3s ease 0s;
+}
+
+.w3-border {
+    border: 1px solid #000000!important;
+}
+
+.levelAlign {
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+.levelTop {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 60px;
+}
+
+.content {
+    height: 150vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+.loading .title {
+    padding: 15px;
+    font-family: Verdana, comic sans ms, Arial, arial black, times new roman, Times, serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    color: #555;
+}
+
+.menuBottom {
+    padding-top: 230px;
+}
+
+.usingMethod {
+    padding: 20px;
+    font-family: Verdana, comic sans ms, Arial, arial black, times new roman, Times, serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #555;
+}
+
+.btnTxt, .btnTxtDesc {
+    font-family: inherit;
+    font-size: 11px;
+    text-decoration: none;
+    color: black;
+}
+
+.btnTxtDesc {
+    font-size: 14px;
+    color: red;
+}
+
+.w3-button {
+    background-color: #beeefc;
+}
+
+.screenZoom {
+    width: 40px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #4b9bff;
+}
+
+.w3-center.screenZoom {
+    border-color: black;
+}
+
+.screenZoom:hover {
+    color: green !important;
+    border-radius: 13px;
+    border-color: #494949 !important;
+    transition: all 0.3s ease 0s;
+}
+
+.usingMethodWidth {
+    max-width: 120px;
+    border-radius: 20px;
+}
+
+.image-wrapper {
+    margin: auto;
+    width: 500px;
+    overflow: hidden;
+    font-size: 0;
+}
+
+.image-home {
+    width: 500px;
+    margin-top: -660px;
+    text-align: left;
+}
+
+img {
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-wrapper:hover img {
+    transform: scale(1.2);
+}
+
+.volumeHide1, .volumeHide2 {
+}
+
+.levelTxt {
+    font-family: "Neue Haas Grotesk Text Pro Medium";
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+a.levelTxt:hover, a.levelTxt:active {
+    text-align: center;
+    font-size: 14px;
+    color: #8bc34a;
+}
+
+.bottomLogo {
+    width: 70%;
+    height: 20px;
+}
+
+.nickname {
+    padding: 3px 6px 3px 6px;
+    font-size: 11px;
+    font-weight: bold;
+    color: white !important;
+}
+
+.bottomVolume1, .bottomVolume2 {
+    /*padding-top: 50px;*/
+    width: 12%;
+    height: 12%;
+}
+
+.home {
+    padding-left: 40px;
+    width: 90px;
+    height: 85px;
+}
+
+.homeCursor {
+    cursor: pointer;
+}
+
+.btnConfirm {
+    padding: 10px 50px;
+    margin-top: -20px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;text-align: center;
+    background-image: linear-gradient(45deg, #8900fe, #2e89fe 50%, #00e8fe);
+}
+
+.gameDescription {
+    padding-left: 25%;
+    color: white;
+}

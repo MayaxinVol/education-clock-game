@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <!-- web app apple start -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <!-- web app apple end -->
+
+    <title>Educational Clock Game</title>
+    <link rel="stylesheet" href="./assets/css/w3.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/gameRound.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/sliders.css">
+</head>
+<body>
+
+<!--<canvas id="canvas"></canvas>-->
+
+<div class="content">
+    <div class="loading">
+        <div class="title">
+            Reading the time
+        </div>
+        <div class="w3-center">
+            <div class="w3-bar">
+                <div class="w3-bar-item">
+                    <div class="w3-btn w3-border w3-round-large btnHeader">
+                        <a class="btnTxt" href="#">
+                            Other problems
+                        </a>
+                    </div>
+                </div>
+                <div class="w3-bar-item">
+                    <div class="w3-btn w3-border w3-round-large btnHeader">
+                        <a class="btnTxt" href="#">
+                            Quantities and measurements
+                        </a>
+                    </div>
+                </div>
+                <div class="w3-bar-item">
+                    <div class="w3-btn w3-border w3-round-large btnHeader">
+                        <a class="btnTxt" href="#">
+                            Time problems
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w3-bar-item">
+                    <div class="w3-btn w3-border w3-round-large w3-center screenZoom">
+                        <a class="btnTxt" href="#">
+                            <img class="fullScreen" src="./assets/image/firstPage/zoom-directions.svg" alt="Full Screen Game">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="w3-center">
+            <a class="btnTxtDesc">
+                If you have a problem with moving the needles (which remain blocked), go to full screen.
+            </a>
+        </div>
+<!--*
+**  First Page level
+*-->
+        <div class="mainBackGround">
+
+            <div class="startMenu">
+                <div class="levelButton">
+                    <div class="roundButton">
+                        <div class="robotGameMenu">
+                            <div class="w3-center menuTop ">
+                                <div class="w3-bar levelAlign">
+                                    <div class="w3-bar-item">
+                                        <a id="learnBtn" class="levelTxt hideMain" data-toggle="tooltip" title="Level 1: Turn the needles. Hours only" data-type="primary">Level 1</a>
+                                    </div>
+                                    <div class="w3-bar-item">
+                                        <a class="levelTxt hideMain" data-toggle="tooltip" title="Level 2: Indicates the time. Hours only"data-placement="bottom">Level 2</a>
+                                    </div>
+                                    <div class="w3-bar-item">
+                                        <a class="levelTxt hideMain" data-toggle="tooltip" title="Level 3: Turn the needles. Hours + minutes of 5 in 5">Level 3</a>
+                                    </div>
+                                    <div class="w3-bar-item">
+                                        <a class="levelTxt hideMain" data-toggle="tooltip" title="Level 4: Indicates the time. Hours + minutes of 5 in 5">Level 4</a>
+                                    </div>
+                                    <div class="w3-bar-item">
+                                        <a class="levelTxt hideMain" data-toggle="tooltip" title="Level 5: Turn the needles. Hours + minutes">Level 5</a>
+                                    </div>
+                                </div>
+
+                                <div class="w3-bar levelTop levelAlign">
+                                    <div class="w3-bar-item">
+                                        <a class="levelTxt hideMain" data-toggle="tooltip" title="Level 6: Indicates the time. Hours + minutes">Level 6</a>
+                                    </div>
+                                    <div class="w3-bar-item">
+                                        <a class="levelTxt hideMain" data-toggle="tooltip" title="Level 7: Turn the needles. The time is displayed in letters (operation by 1/4 hour)">Level 7</a>
+                                    </div>
+                                    <div class="w3-bar-item">
+                                        <a class="levelTxt hideMain" data-toggle="tooltip" title="Level 8: Turn the needles. The time is displayed in letters">Level 8</a>
+                                    </div>
+                                    <div class="w3-bar-item">
+                                        <a class="levelTxt hideMain" data-toggle="tooltip" title="Level 9: Problems of time to solve">Level 9</a>
+                                    </div>
+                                    <div class="w3-bar-item">
+                                        <a class="levelTxt hideMain" data-toggle="tooltip" title="Level 10: Time problems more difficult to solve">Level 10</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w3-row w3-center menuBottom">
+                                <div class="w3-third w3-left">
+                                    <a class="w3-btn w3-gray w3-border w3-round-medium nickname" href="#">Change Nickname</a>
+                                </div>
+                                <div class="w3-third">
+                                    <a class="volumeHide1 image-wrapper" href="#"><img class="bottomVolume1" src="./assets/image/firstPage/volumeLogo.png" alt=""></a>
+                                    <a class="volumeHide2 image-wrapper" href="#"><img class="bottomVolume2 hide" src="./assets/image/firstPage/volumeMute.svg" alt=""></a>
+                                </div>
+                                <div class="w3-third w3-right">
+                                    <div><img class="bottomLogo" src="./assets/image/firstPage/bottomLogo.jpg" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--
+*** Level 1
+-->
+            <div class="roundStart hide">
+                <div class="gameStartClock">
+                    <div class="roundButton">
+                        <div class="startButton hide"></div>
+                        <div class="robotGameStart"></div>
+                        <div class="robotGameRound hide">
+                            <div class="round1 hide"></div>
+                            <div class="round2 hide"></div>
+                            <div class="round3 hide"></div>
+                            <div class="round4 hide"></div>
+                            <div class="round5 hide"></div>
+                            <div class="round6 hide"></div>
+                            <div class="round7 hide"></div>
+                            <div class="round8 hide"></div>
+                            <div class="round9 hide"></div>
+                            <div class="round10 hide"></div>
+                            <div class="round11 hide"></div>
+                            <div class="round12 hide"></div>
+                            <div class="round13 hide"></div>
+                            <div class="round14 hide"></div>
+                            <div class="round15 hide"></div>
+                            <div class="round16 hide"></div>
+                            <div class="round17 hide"></div>
+                            <div class="round18 hide"></div>
+                            <div class="round19 hide"></div>
+                            <div class="round20 hide"></div>
+                        </div>
+                    </div>
+
+                    <div class="image-home">
+                        <a class="homeCursor image-wrapper"><img class="home" src="./assets/image/firstPage/home.svg" alt=""></a>
+                    </div>
+                    <a class="gameDescription" style="text-overflow: ellipsis;">Rotate the hour mark so that the clock shows the right hour</a>
+
+                    <div class="container">
+                        <div id="myCanvas" class="clock"></div>
+                    </div>
+                </div>
+
+                <div class="w3-center">
+                    <div class="w3-button w3-container w3-animate-zoom btnConfirm">
+                        Confirm
+                    </div>
+                </div>
+            </div>
+<!--&lt;!&ndash;-->
+<!--*** Judgment-->
+<!--&ndash;&gt;-->
+        </div>
+        <div>
+            <div class="w3-center usingMethod">
+                Time reading sheets
+            </div>
+            <div class="w3-center">
+                <div class="w3-bar">
+                    <div class="w3-bar-item">
+                        <a class="image-wrapper" href="./assets/image/firstPage/l-heure-1-ce1.pdf" target="_blank"
+                           title="Reading time 1">
+                            <img class="usingMethodWidth" src="./assets/image/firstPage/using-method1.png"
+                                 alt="Using Method1">
+                        </a>
+                    </div>
+                    <div class="w3-bar-item">
+                        <a class="image-wrapper" href="./assets/image/firstPage/l-heure-2-ce1.pdf" target="_blank"
+                           title="Reading time 2">
+                            <img class="usingMethodWidth" src="./assets/image/firstPage/using-method2.png" alt="Using Method2">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./assets/js/zepto-1.1.6.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/addons/p5.dom.min.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/addons/p5.sound.min.js"></script>-->
+<script src="./assets/js/sketch.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+    let confirmFlag = false;
+
+    $("a.hideMain").click(function () {
+        $("div.startMenu").addClass('hide');
+        $("div.roundStart").removeClass('hide');
+        cleanDraw();
+        MathGame.prototype.createAddition();
+    });
+
+    $("a.homeCursor").click(function () {
+        $("div.startMenu").removeClass('hide');
+        $("div.roundStart").addClass('hide');
+        $("div.startButton").removeClass('hide');
+
+        let prevCss = $('.roundButton').css('background-image');
+        const arrLast = prevCss.split(',');
+        arrLast.splice(2, arrLast.length-3);
+        $('.roundButton').css('background-image', arrLast.toString());
+
+        roundArray = [];
+        len = 0;
+        roundSuccess = 0;
+        cleanDraw();
+    });
+
+    $("div.btnConfirm").click(function () {
+        confirmFlag = true;
+        $("div.robotGameStart").addClass('hide');
+        $("div.robotGameRound").removeClass('hide');
+        $("div.startButton").addClass('hide');
+        $("div.btnConfirm").addClass('hide');
+        answerDraw();
+    });
+
+    $("div.gameStartClock").click(function () {
+        if ((confirmFlag === true) && (len <= 9))
+        {
+            confirmFlag = false;
+            $("div.robotGameStart").removeClass('hide');
+            $("div.robotGameRound").addClass('hide');
+            $("div.btnConfirm").removeClass('hide');
+            cleanDraw();
+            MathGame.prototype.createAddition();
+        }
+    });
+
+    $("a.volumeHide1").click(function () {
+        $("img.bottomVolume2").removeClass('hide');
+        $("img.bottomVolume1").addClass('hide');
+    });
+
+    $("a.volumeHide2").click(function () {
+        $("img.bottomVolume1").removeClass('hide');
+        $("img.bottomVolume2").addClass('hide');
+    });
+</script>
+
+</body>
+</html>
